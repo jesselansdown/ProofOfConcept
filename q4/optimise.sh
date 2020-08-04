@@ -1,5 +1,5 @@
 #!/bin/bash
-optimise () {
+
 	# concatenate the specific constaints in to a file with the whole problem
   cat model_start.lp > temp_$@.lp
   cat $@.lp >> temp_$@.lp
@@ -16,5 +16,4 @@ optimise () {
     rm out_$@.txt
   fi
   rm temp_$@.lp
-}
 
